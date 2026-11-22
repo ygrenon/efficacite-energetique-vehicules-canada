@@ -136,17 +136,23 @@ Les notebooks contiennent les cellules de code et les explications nécessaires 
 
 ## 8. Reproduction des analyses
 
-Pour reproduire les travaux :
+Les trois notebooks sont conçus pour être exécutés indépendamment dans Google Colab.
 
-  1. Télécharger les notebooks à partir de ce dépôt.
-  2. Ouvrir les fichiers `.ipynb` dans Google Colab.
-  3. Récupérer le jeu de données officiel de RNCan pour les années 2015 à 2024.
-  4. Fournir le fichier CSV aux notebooks selon les instructions de chargement présentes dans le code.
-  5. Exécuter les cellules dans l'ordre.
+Pour reproduire les analyses :
 
-Le troisième notebook permet notamment de reconstruire le modèle et de régénérer les tableaux et les figures définitifs.
+  1. Télécharger le notebook souhaité depuis ce dépôt GitHub.
+  2. Ouvrir le fichier `.ipynb` dans Google Colab.
+  3. Exécuter les cellules dans l'ordre, à partir du début du notebook.
 
-Les résultats peuvent varier légèrement selon les versions des bibliothèques utilisées.
+Les données officielles de Ressources naturelles Canada (RNCan), couvrant les années modèles 2015 à 2024, sont téléchargées automatiquement lors de l'initialisation si le fichier CSV est absent de l'environnement d'exécution.
+
+Le fichier source est enregistré dans le répertoire `/content/data/raw/` et lu avec l'encodage `cp1252`.
+
+Les dépendances Python sont documentées dans le fichier `requirements.txt` à la racine du dépôt.
+
+Le troisième notebook permet notamment de reconstruire le modèle prédictif et de générer les tableaux CSV et les figures définitives du projet.
+
+La reproduction des résultats suppose que la source officielle RNCan demeure accessible et que le fichier téléchargé correspond à celui utilisé lors du développement. Des différences de versions des bibliothèques pourraient également influencer certains résultats.
 
 ## 9. Limites du projet
 
